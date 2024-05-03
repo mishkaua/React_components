@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .wrapper {
+    @apply flex items-center justify-center;
+    height: 100vh;
+    width: 100vw;
+    gap: 20px;
+  }
+}
+
+@layer base {
+  .accordion {
+    width: 500px;
+  }
+}
+
+@layer base {
+  .item {
+    @apply bg-sky-500 p-4 border-2 rounded-md;
+  }
+}
+
+@layer base {
+  .title {
+    @apply flex items-center justify-center;
+    cursor: pointer;
+  }
+}
+
+@layer base {
+  .content {
+    @apply flex items-center justify-center text-white;
+    height: auto;
+  }
+}
