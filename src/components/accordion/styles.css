@@ -7,7 +7,14 @@
     @apply flex items-center justify-center;
     height: 100vh;
     width: 100vw;
+    flex-direction: column;
     gap: 20px;
+  }
+}
+
+@layer base {
+  .wrapper button {
+    @apply bg-sky-500 border-2 rounded-md px-4 py-4 hover:bg-sky-700;
   }
 }
 
@@ -19,7 +26,7 @@
 
 @layer base {
   .item {
-    @apply bg-sky-500 p-4 border-2 rounded-md;
+    @apply bg-sky-500 p-4 border-2 rounded-md hover:bg-sky-700;
   }
 }
 
